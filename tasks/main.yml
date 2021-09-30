@@ -61,6 +61,7 @@
 # Create each SFTP user with home directory on the correct partition, and add to SFTP group.
 - name: SFTP-Server | Create sftp users
   user:
+    uid: "{{ item.uid }}"
     name: "{{ item.name }}"
     group: "{{ item.group | default(omit) }}"
     groups: "{{ sftp_group_name }}"
