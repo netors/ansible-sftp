@@ -57,6 +57,7 @@ Notes:
   vars:
     - sftp_users:
       - name: peter
+        uid: 5001
         password: "$1$salty$li5TXAa2G6oxHTDkqx3Dz/" # passpass
         shell: False
         sftp_directories:
